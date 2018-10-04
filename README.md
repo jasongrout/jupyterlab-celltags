@@ -32,18 +32,18 @@ Requires node 4+ and npm 4+
 git clone https://github.com/jupyterlab/jupyterlab-celltags.git
 cd jupyterlab-celltags
 # Install dependencies
-npm install # or yarn
+yarn install
 # Build Typescript source
-npm run build # or yarn build
+yarn run build
 # Link your development version of the extension with JupyterLab
 jupyter labextension link .
 # Rebuild Typescript source after making changes
-npm run build # or yarn build
+yarn run build
 ```
 
 To rebuild the package and the JupyterLab app:
 
 ```bash
-npm run build
+yarn run build
 jupyter lab build
 ```
