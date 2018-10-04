@@ -29,25 +29,14 @@
     "clean": "rimraf lib",
     "watch": "tsc -w"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,css,md,ts,tsx}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "dependencies": {
-    "@jupyterlab/application": ">=0.18.0",
-    "@jupyterlab/apputils": ">=0.18.0",
-    "@jupyterlab/coreutils": ">=2.0.1",
-    "@jupyterlab/docmanager": ">=0.18.0",
-    "@jupyterlab/notebook": ">=0.18.0",
-    "@jupyterlab/notebook-extension": "^0.18.0",
-    "@jupyterlab/rendermime": ">=0.18.0",
+    "@jupyterlab/application": "^0.19.1-alpha.0",
+    "@jupyterlab/apputils": "^0.19.1-alpha.0",
+    "@jupyterlab/coreutils": "^2.2.1-alpha.0",
+    "@jupyterlab/docmanager": "^0.19.1-alpha.0",
+    "@jupyterlab/notebook": "^0.19.1-alpha.0",
+    "@jupyterlab/notebook-extension": "^0.19.1-alpha.0",
+    "@jupyterlab/rendermime": "^0.19.1-alpha.0",
     "@types/node": "^10.5.1",
     "@types/react-dom": "^16.0.6",
     "react": "~16.4.0",
@@ -60,7 +49,18 @@
     "rimraf": "^2.6.1",
     "typescript": "~2.9.2"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "jupyterlab": {
     "extension": true
+  },
+  "lint-staged": {
+    "*.{js,json,css,md,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
